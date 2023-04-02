@@ -56,7 +56,26 @@ float headingObjetivo(float lat1, float lon1, float lat2, float lon2) {
   cuidar el tipo de dato que se manda, pues puede ocasionar errores.
 */
 
+//Esta funcion puede funcionar con solo 4 parametros, lat2 y lon2 se pueden reemplazar por variables globales que pueden ser editadas dentro de la funcion jejeje
+
+//EJEMPLO 1
 void sumarDistancia(float latitud, float longitud, float distancia, float angulo, float lat2, float lon2) {
+  
+  const float R = 6371000; // radio de la Tierra en metros
+
+  // Convertir el ángulo a radianes
+  angulo = angulo * M_PI / 180.0;
+
+  // Calcular la nueva latitud y longitud, modificando el valor de los punteros
+  latObj = asin(sin(latitud) * cos(distancia / R) + cos(latitud) * sin(distancia / R) * cos(angulo));
+  lonObj = longitud + atan2(sin(angulo) * sin(distancia / R) * cos(latitud), cos(distancia / R) - sin(latitud) * sin(latObj));
+
+}
+
+//EJEMPLO 2
+float latObj, lonObj:
+
+void sumarDistancia(float latitud, float longitud, float distancia, float angulo) {
   
   const float R = 6371000; // radio de la Tierra en metros
 
