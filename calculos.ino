@@ -1,4 +1,4 @@
-/*
+
 float distanciaObjetivo(float lat1, float lon1, float lat2, float lon2) { 
   
   // Radio de la Tierra en metros
@@ -23,11 +23,11 @@ float distanciaObjetivo(float lat1, float lon1, float lat2, float lon2) {
   
 }
 
-*/
+
 /*  Función para calcular Heading  */
 
 //#include <math.h> //Es importante añadir esta lib para reconocer M_PI y las funciones trigonométricas
-/*
+
 float headingObjetivo(float lat1, float lon1, float lat2, float lon2) { 
   
   // Calculamos la diferencia entre las coordenadas
@@ -46,7 +46,7 @@ float headingObjetivo(float lat1, float lon1, float lat2, float lon2) {
   
   return h;
 }
-*/
+
 /* Función para calcular el nuevo par de coordenadas a partir de distancia (metros) y ángulo */
 
 /*         
