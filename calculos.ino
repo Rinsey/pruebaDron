@@ -65,6 +65,6 @@ void sumarDistancia(float latitud, float longitud, float distancia, float angulo
 
   // Calcular la nueva latitud y longitud, modificando el valor de los punteros
   latObj = asin(sin(latitud) * cos(distancia / R) + cos(latitud) * sin(distancia / R) * cos(angulo));
-  lonObj = longitud + atan2(sin(angulo) * sin(distancia / R) * cos(latitud), cos(distancia / R) - sin(latitud) * sin(lat2));
+  lonObj = longitud + atan2(sin(angulo) * sin(distancia / R) * cos(latitud), cos(distancia / R) - sin(latitud) * sin(latObj));
 
 }
